@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+
+.head{
+    border: 2px solid rgb(225, 121, 121);
+    padding: 20px;
+    background-color: aqua;
+    /* display: inline; */
+}
+.aside{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid purple;
+    padding: 20px;
+    width: 50%;
+    background-color: #E5E0FF;
+    overflow: scroll;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section{
+    display:flex;
+    flex-direction: column;
+    border: 2px solid purple;
+    padding: 20px;
+    width: 50%;
+    background-color: #FDF4F5;
+    overflow: scroll;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+    display: flex;
+    border: 2px solid black;
+    height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.save{
+    padding: 5px;
+    margin: 2px;
+    background-color: #E3ACF9;
+    border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-show_hide{
+    padding: 5px;
+    margin: 2px;
+    background-color:#B2A4FF;
+    border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input{
+    margin: 2px;
+    background-color: #ABC9FF;
+    border-radius: 10px;
+    border-color: #ABC9FF;
+}
+
+.basic_data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
 }
