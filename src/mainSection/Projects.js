@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import Project from './Project'
 
 function Projects() {
-    const [Projects,setProjects] = useState([{heading:"Expense Tracker",techStack:"Reactjs, JSX, CSS",url:"https://cosmic-hotteok-ceeb12.netlify.app/"},{heading:"Portfolio",techStack:"Reactjs, JSX, CSS",url:""},{heading:"Task Manager",techStack:"Reactjs, JSX, CSS",url:"https://serene-otter-e03856.netlify.app/"}])
+    const [Projects,setProjects] = useState([{heading:"Expense Tracker",techStack:"Reactjs, JSX, CSS",url:"https://cosmic-hotteok-ceeb12.netlify.app/"},{heading:"Portfolio",techStack:"Reactjs, JSX, CSS",url:"https://guileless-pasca-ee27e6.netlify.app/"},{heading:"Task Manager",techStack:"Reactjs, JSX, CSS",url:"https://serene-otter-e03856.netlify.app/"}])
     const [ShowProjects,setShowProjects] = useState(false)
     const addproject = (newProject)=>{
         setProjects(prevProjects =>
