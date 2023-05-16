@@ -51,7 +51,7 @@ function Educations() {
         {show?<Education addNewEducation={addNewEducation}/>:''}
         <button onClick={handleAddEducation} className='btn-show_hide'>{show?'Hide form':'Add Education'}</button>
         
-        <div style={{display:"flex",alignContent:"center",justifyContent:"center",overflow:"scroll",flexWrap:"wrap"}}>{listOfEducation}</div>
+        <div style={{display:"flex",alignContent:"center",justifyContent:"center",flexWrap:"wrap"}}>{listOfEducation}</div>
     </div>
   )
 }

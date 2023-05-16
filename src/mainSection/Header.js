@@ -65,7 +65,7 @@ function Header() {
                    <h3>{detail.objective}</h3>
                    </div>
                 
-                <nav style={{display:"flex",alignContent:"center",justifyContent:"space-around",overflow:"scroll",flexWrap:"wrap"}}>
+                <nav style={{display:"flex",alignContent:"center",justifyContent:"space-around",flexWrap:"wrap"}}>
                     <h4 >
                         Contact Number
                         <div>8448723779</div>

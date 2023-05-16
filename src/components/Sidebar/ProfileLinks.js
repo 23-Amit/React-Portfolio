@@ -50,7 +50,7 @@ function ProfileLinks() {
         <h2 style={{textAlign:"center"}}>Profile Links</h2>
         {enterProfile?<Profile addProfile={addProfile}/>:''}
         <button onClick={handleClick} className='btn-show_hide'>{enterProfile?'Hide form':'Add Profile'}</button>
-        <div style={{display:"flex",alignContent:"center",justifyContent:"center",overflow:"scroll",flexWrap:"wrap"}}>{profileList}</div>
+        <div style={{display:"flex",alignContent:"center",justifyContent:"center",flexWrap:"wrap"}}>{profileList}</div>
     </div>
   )
 }

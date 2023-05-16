@@ -52,7 +52,7 @@ function Certifications() {
         
         <button onClick={handleClick} className='btn-show_hide'>{addCerticate?'Hide form':'Add Certification'} </button>
         
-        <div style={{display:"flex",alignContent:"center",justifyContent:"center",flexWrap:"wrap",overflow:"scroll"}}>{listOfCertification}</div>
+        <div style={{display:"flex",alignContent:"center",justifyContent:"center",flexWrap:"wrap"}}>{listOfCertification}</div>
     </div>
   )
 }

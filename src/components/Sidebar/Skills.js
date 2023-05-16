@@ -49,7 +49,7 @@ function Skills() {
         {enterSkill?<Skill addSkill={addSkill}/>:''}
         <button onClick={handleClick} className='btn-show_hide'>{enterSkill?'Hide form':'Add Skill'}</button>
         {/* {listOfSkill} */}
-        <div style={{display:"flex",alignContent:"center",justifyContent:"center",overflow:"scroll",flexWrap:"wrap"}}>{listOfSkill}</div>
+        <div style={{display:"flex",alignContent:"center",justifyContent:"center",flexWrap:"wrap"}}>{listOfSkill}</div>
     </div>
   )
 }

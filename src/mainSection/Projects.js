@@ -46,7 +46,7 @@ function Projects() {
         <h2 style={{textAlign:"center"}}>Projects</h2>
         {ShowProjects?<Project addproject = {addproject}/>:''}
         <button onClick={handleShow} className='btn-show_hide'>{ShowProjects?'Hide form':'Add Project'}</button>
-        <div style={{display:"flex",alignContent:"center",justifyContent:"center",overflow:"scroll",flexWrap:"wrap"}}>{listofprojects}</div>
+        <div style={{display:"flex",alignContent:"center",justifyContent:"center",flexWrap:"wrap"}}>{listofprojects}</div>
     </div>
   )
 }
