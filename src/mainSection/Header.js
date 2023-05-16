@@ -44,7 +44,7 @@ function Header() {
     }
     //console.log(detail.name)
     return (
-        <div className="head">
+        <div  style={{border:"2px solid black" ,padding:"20px",margin:"5px"}}>
             {show ? <form onSubmit={handleSubmit}>
                 <label htmlFor="Name" >Enter your Name : </label>
                 <input type="text" value={name} onChange={handleName} className='input' />
@@ -59,9 +59,24 @@ function Header() {
             </form> : null}
             <button onClick={handleClick} className='btn-show_hide' >{show ? 'Hide Form' : 'Enter Data'}</button>
             <div className='basic_data'>
-                <h2>{detail.name}</h2>
-                <h2>{detail.domain}</h2>
-                <h3>{detail.objective}</h3>
+                <div style={{textAlign:"center"}}>
+                    <h2>{detail.name}</h2>
+                   <h2>{detail.domain}</h2>
+                   <h3>{detail.objective}</h3>
+                   </div>
+                
+                <nav style={{display:"flex",alignContent:"center",justifyContent:"space-around",overflow:"scroll",flexWrap:"wrap"}}>
+                    <h4 >
+                        Contact Number
+                        <div>8448723779</div>
+                        </h4>
+                    <h4 >Email
+                    <div>Amityadav23793@gmail.com</div>
+                    </h4>
+                    <h4 >LinkedIn
+                    <div><a href='https://www.linkedin.com/in/amit-yadav-261178231/'>amit-yadav-261178231/</a></div>
+                    </h4>
+                </nav>
             </div>
         </div>
     )

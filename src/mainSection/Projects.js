@@ -10,7 +10,7 @@ function Projects() {
                 return [newProject,...prevProjects]
             })
     }
-    console.log(Projects)
+    //console.log(Projects)
     const listofprojects = Projects.map((ele,index)=>
     {
         return (
@@ -18,7 +18,7 @@ function Projects() {
         <><h3>Title : {ele.heading}</h3></>
         <><h4>Tech Stack : {ele.techStack}</h4></>
         <><h4>Live Project Link : <a href={ele.url}>{ele.heading}</a></h4></>
-        <><button style={{background:"#FF9F9F",borderRadius: "10px",borderColor: "#E74646",marginLeft:"auto"}} onClick={()=>{handleRemove(index)}}>Delete Project</button></>
+        <><button style={{background:"#FF9F9F",borderRadius: "10px",borderColor: "#E74646",marginLeft:"auto"}} onClick={()=>{handleRemove(index)}}>Delete</button></>
         </ul>)
     })
     //console.log(listofprojects)
@@ -42,11 +42,11 @@ function Projects() {
         )
     }
   return (
-    <div>
-        <h2>Projects</h2>
+    <div style={{border:"2px solid black" ,padding:"20px",margin:"5px"}} className='component'>
+        <h2 style={{textAlign:"center"}}>Projects</h2>
         {ShowProjects?<Project addproject = {addproject}/>:''}
-        <button onClick={handleShow} className='btn-show_hide'>{ShowProjects?'Hide':'Add'} Projects </button>
-        {listofprojects}
+        <button onClick={handleShow} className='btn-show_hide'>{ShowProjects?'Hide form':'Add Project'}</button>
+        <div style={{display:"flex",alignContent:"center",justifyContent:"center",overflow:"scroll",flexWrap:"wrap"}}>{listofprojects}</div>
     </div>
   )
 }

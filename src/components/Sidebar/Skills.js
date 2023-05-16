@@ -26,7 +26,7 @@ function Skills() {
     const listOfSkill = skill.map((ele,index)=>
     {
         return (
-            <ul key={index}>
+            <ul key={index} >
                 <h4>{ele}</h4>
                 <button onClick={()=>removeSkill(index)} style={{background:"#FF9F9F",borderRadius: "10px",borderColor: "#E74646",marginLeft:"auto"}}>Delete</button>
             </ul>
@@ -44,11 +44,12 @@ function Skills() {
     }
     
   return (
-    <div>
-        <h2>SKILLS</h2>
+    <div  style={{border:"2px solid black" ,padding:"20px",margin:"5px"}} className='component'>
+        <h2 style={{textAlign:"center"}}>SKILLS</h2>
         {enterSkill?<Skill addSkill={addSkill}/>:''}
-        <button onClick={handleClick} className='btn-show_hide'>{enterSkill?'Hide':'Add Skill'}</button>
-        {listOfSkill}
+        <button onClick={handleClick} className='btn-show_hide'>{enterSkill?'Hide form':'Add Skill'}</button>
+        {/* {listOfSkill} */}
+        <div style={{display:"flex",alignContent:"center",justifyContent:"center",overflow:"scroll",flexWrap:"wrap"}}>{listOfSkill}</div>
     </div>
   )
 }

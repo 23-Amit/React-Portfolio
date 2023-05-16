@@ -10,19 +10,14 @@ import Header from './mainSection/Header';
 
 function App() {
   return (
-    <div>
-     <Header/>
+
     <div className="App">
-      <aside className='aside'>
-        <Skills />
-        <Certifications />
-        <ProfileLinks />
-      </aside>
-      <section className='section'>
-        <Projects />
-        <Education />
-      </section>
-      </div>
+      <Header />
+      <Skills />
+      <ProfileLinks />
+      <Projects />
+      <Education />
+      <Certifications />
     </div>
   );
 }

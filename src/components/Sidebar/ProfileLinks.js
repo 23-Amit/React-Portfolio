@@ -46,11 +46,11 @@ function ProfileLinks() {
     }
 
   return (
-    <div>
-        <h2>Profile Links</h2>
+    <div  style={{border:"2px solid black" ,padding:"20px",margin:"5px"}} className='component'>
+        <h2 style={{textAlign:"center"}}>Profile Links</h2>
         {enterProfile?<Profile addProfile={addProfile}/>:''}
         <button onClick={handleClick} className='btn-show_hide'>{enterProfile?'Hide form':'Add Profile'}</button>
-        {profileList}
+        <div style={{display:"flex",alignContent:"center",justifyContent:"center",overflow:"scroll",flexWrap:"wrap"}}>{profileList}</div>
     </div>
   )
 }

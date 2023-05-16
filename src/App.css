@@ -1,10 +1,10 @@
 
-.head{
+/* .head{
     border: 2px solid rgb(225, 121, 121);
     padding: 20px;
-    background-color: aqua;
+    background-color: #E6FFFD; */
     /* display: inline; */
-}
+/* }
 .aside{
     display: flex;
     flex-direction: column;
@@ -21,13 +21,13 @@
     border: 2px solid purple;
     padding: 20px;
     width: 50%;
-    background-color: #FDF4F5;
-    overflow: scroll;
+    background-color: #FDF4F5; */
+    /* overflow: scroll;
 }
 
 .App{
-    display: flex;
-    border: 2px solid black;
+    /* display: flex; */
+    /* border: 2px solid black;
     height: 100vh;
 }
 
@@ -36,9 +36,9 @@
     margin: 2px;
     background-color: #E3ACF9;
     border-radius: 10px;
-}
+} */
 
-.btn-show_hide{
+/* .btn-show_hide{
     padding: 5px;
     margin: 2px;
     background-color:#B2A4FF;
@@ -56,5 +56,46 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: stretch;
+    align-items: stretch; */
+/* } */ 
+
+.App{
+    background-color:#B6EAFA;
+    margin-top: 0px;
 }
+
+.input{
+    margin: 2px;
+    background-color: #ABC9FF;
+    border-radius: 10px;
+    border-color: #ABC9FF;
+}
+
+.btn-show_hide{
+    padding: 5px;
+    margin: 2px;
+    background-color:#B2A4FF;
+    border-radius: 10px;
+    border-color: #B2A4FF;
+}
+
+.save{
+    padding: 5px;
+    margin: 2px;
+    background-color: #E3ACF9;
+    border-radius: 10px;
+    border-color: #E3ACF9;
+}
+
+.basic_data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    /* background-color: #2D2727; */
+}
+
+/* .component{
+    color: #FFFFFF;
+    background-color: #2D2727;
+} */

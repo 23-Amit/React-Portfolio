@@ -46,12 +46,13 @@ function Certifications() {
 
   }
   return (
-    <div>
-        <h2>Certification</h2>
+    <div  style={{border:"2px solid black" ,padding:"20px",margin:"5px"}} className='component'>
+        <h2 style={{textAlign:"center"}}>Certifications</h2>
         {addCerticate?<Certification addNewCertificate={addNewCertificate}/>:''}
         
-        <button onClick={handleClick} className='btn-show_hide'>{addCerticate?'Hide':'Add Certification'} </button>
-        {listOfCertification}
+        <button onClick={handleClick} className='btn-show_hide'>{addCerticate?'Hide form':'Add Certification'} </button>
+        
+        <div style={{display:"flex",alignContent:"center",justifyContent:"center",flexWrap:"wrap",overflow:"scroll"}}>{listOfCertification}</div>
     </div>
   )
 }
